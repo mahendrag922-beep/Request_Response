@@ -3,7 +3,9 @@ const http = require("http");
 const server = http.createServer((req, res) => {
 
   if (req.url === "/home") {
+    
     res.writeHead(200, { "Content-Type": "text/html" });
+    res.write("Hello");
     res.end(`
       <html>
         <body>
