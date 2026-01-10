@@ -1,5 +1,5 @@
 const fs = require("fs");
-function requestHandler(req,res){
+function handleRoutes(req,res){
 // 👉 SHOW FORM + MESSAGES
   if (req.method === "GET" && req.url === "/") {
 
@@ -63,6 +63,4 @@ function requestHandler(req,res){
   }
 };
 
-module.exports={
-    requestHandler
-}
+module.exports = handleRoutes;
